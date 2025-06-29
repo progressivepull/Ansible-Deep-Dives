@@ -59,3 +59,5 @@ Before you begin, make sure your system meets these requirements:
 * Use docker run hello-world to test your setup
 
 * Keep Docker Desktop updated for security and performance
+
+[Ansible Deep Dives Context](./README.md)

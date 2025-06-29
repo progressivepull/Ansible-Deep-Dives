@@ -44,3 +44,5 @@ ansible --version
 ```
 You’re now ready to use Ansible from your WSL environment!
 
+[Ansible Deep Dives Context](./README.md)
+
