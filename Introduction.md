@@ -162,5 +162,7 @@ Quickly spin up consistent dev/test environments.
 * Mirror production environments for QA
 
 *  Use Vagrant or Docker with Ansible for local development
+*  
+
 
 [Ansible Deep Dives Context](./README.md)

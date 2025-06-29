@@ -1,4 +1,4 @@
-# Install Ansible
+# Install Ansible on Local Machine
 
 ##🪟 Windows
 Ansible doesn't run natively on Windows, but you can use it via:
@@ -27,3 +27,20 @@ This shows all installed Linux distributions and their current state.
  ``` bash
 wsl.exe
 ```
+This opens your default Linux environment (e.g., Ubuntu).
+
+## 🧰 Step 3: Install Ansible in WSL (Ubuntu)
+Once inside the Linux shell, follow these steps:
+
+``` bash
+# Update package lists
+sudo apt update
+
+# Install Ansible
+sudo apt install ansible -y
+
+# Verify installation
+ansible --version
+```
+You’re now ready to use Ansible from your WSL environment!
+
