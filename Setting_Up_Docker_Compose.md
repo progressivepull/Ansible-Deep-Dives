@@ -4,7 +4,7 @@ Setting up our lab environment using Docker Compose
 After installing Docker, we will:
 
 **1.Set up our lab environment using Docker Compose**
-Docker Compose is included with Docker Desktop and allows us to easily run multi-container applications with shared networking.
+* Docker Compose is included with Docker Desktop and allows us to easily run multi-container applications with shared networking.
 
 **2. Understand Ansible connectivity**
 
