@@ -1,0 +1,14 @@
+Overview
+In this section, we will set up the Ansible lab environment that we’ll use throughout the course. The lab uses Docker, so we’ll begin with installing Docker Desktop.
+
+We will cover:
+
+Installation of Docker Desktop on Mac OS and Windows
+
+Installation of Docker on Linux (using Ubuntu as a reference)
+
+Setting up our lab environment using Docker Compose
+
+Configuring passwordless SSH connectivity for Ansible
+
+Setting up the course code repository and validating our environment
