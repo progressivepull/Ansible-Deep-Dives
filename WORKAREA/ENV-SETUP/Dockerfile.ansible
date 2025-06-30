@@ -1,0 +1,4 @@
+FROM spurin/diveintoansible:ansible
+
+# Optionally, install sshpass for automation if not present
+RUN apt-get update && apt-get install -y sshpass && rm -rf /var/lib/apt/lists/*
