@@ -41,14 +41,3 @@ docker-compose version
 ```
 Both commands should return the same version number, confirming that Docker Compose is correctly installed and accessible.
 
-**2. Understand Ansible connectivity**
-
-* Ansible is agentless, meaning it doesn’t require an agent on the target hosts.
-
-* It does require connectivity from the Ansible control host to the inventory targets, typically via SSH on Linux systems.
-
-**3. Configure passwordless SSH connectivity**
-* We will set up SSH keys so that our Ansible control host can connect to the target hosts without requiring passwords each time.
-
-**4. Set up the course code repository**
-* Finally, we will clone and validate the course repository to ensure our environment is ready for the hands-on labs.
