@@ -28,6 +28,8 @@ Connect to ubuntu-node2:
 ```bash
 ssh ubuntu-node2 hostname
 ```
+![hostname.png](./IMAGES/hostname.png)
+
 If the connection succeeds, each command will return the hostname of the container.
 
 # SSH Warning: Remote Host Identification Has Changed
