@@ -131,6 +131,35 @@ Warning: Permanently added 'ubuntu-node2' (ED25519) to the list of known hosts.
 d93062811947
 ```
 
+# Hello World Playbook
+Here’s a clean, minimal “Hello World” Ansible playbook you can drop directly into your /ansible folder and run with ansible-playbook.
+
+### ▶️ How to run it
+Inside your Ansible controller container:
+
+``` bash
+cd /ansible
+ansible-playbook setup.yml
+```
+### 🎯 Expected output
+
+```
+PLAY [Hello World Playbook] ****************************************************
+
+TASK [Print Hello World] *******************************************************
+ok: [ubuntu-node1] => {
+    "msg": "Hello World from Ansible!"
+}
+ok: [ubuntu-node2] => {
+    "msg": "Hello World from Ansible!"
+}
+
+PLAY RECAP *********************************************************************
+ubuntu-node1 : ok=1 changed=0
+ubuntu-node2 : ok=1 changed=0
+```
+
+![setup.png](./IMAGES/setup.png)
 
 ---
 

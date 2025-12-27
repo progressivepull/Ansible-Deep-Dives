@@ -1,45 +1,9 @@
 ---
-- name: Initial setup for Ubuntu nodes
-  hosts: ubuntu_nodes
-  become: true
+- name: Hello World Playbook
+  hosts: all
+  gather_facts: false
 
   tasks:
-
-    - name: Update apt cache
-      apt:
-        update_cache: yes
-        cache_valid_time: 3600
-
-    - name: Upgrade all packages
-      apt:
-        upgrade: dist
-      register: upgrade_result
-
-    - name: Install common packages
-      apt:
-        name:
-          - curl
-          - vim
-          - git
-          - htop
-          - net-tools
-          - python3
-          - python3-apt
-        state: present
-
-    - name: Ensure /etc/motd is set
-      copy:
-        dest: /etc/motd
-        content: |
-          Welcome to your Ansible Lab Node!
-          Managed by Ansible.
-
-    - name: Create a tools directory
-      file:
-        path: /opt/tools
-        state: directory
-        mode: '0755'
-
-    - name: Display upgrade summary
+    - name: Print Hello World
       debug:
-        msg: "Packages upgraded: {{ upgrade_result.stdout_lines | default([]) }}"
+        msg: "Hello World from Ansible!"
