@@ -171,6 +171,8 @@ ubuntu-node2 : ok=1 changed=0
 * [diveintoansible-lab](https://github.com/spurin/diveintoansible-lab)
 * [devops-master-class](https://github.com/in28minutes/devops-master-class)
 * [ansible-training-answer-keys-2](https://github.com/mmumshad/ansible-training-answer-keys-2)
+* [Getting started with Ansible | Learn Linux TV | YouTube](https://www.youtube.com/playlist?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
+* [Ansible | Jim's Garage| YouTube](https://www.youtube.com/playlist?list=PLXHMZDvOn5sW-EXm2Ur5TroSatW-t0Vz_)
 
 
 
