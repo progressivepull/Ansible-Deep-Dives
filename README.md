@@ -7,8 +7,6 @@ Follow the steps below to launch the lab environment and verify SSH connectivity
 Move into the project’s ansible-lab folder:
 ```
 cd /D/GitHub-Progressive_Pull/Ansible-Deep-Dives/ansible-lab
-ansible all -m ping
-docker exec -it ansible-controller bash
 ```
 
 ### 2. Start the Lab Environment
@@ -79,6 +77,30 @@ Then try connecting again:
 ssh ubuntu-node1 hostname
 ssh ubuntu-node2 hostname
 ```
+
+# ✅Test 
+
+Inside the controller:
+
+`` bash
+ansible all -m ping
+`` 
+Or target a single host:
+
+`` bash
+ansible ubuntu-node1 -m ping
+`` 
+You should now see:
+
+`` Code
+ubuntu-node1 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+``
+
+![success_ping.png](./IMAGES/success_ping.png)
+
 
 # Instructions: Connecting to ubuntu-node2 for the First Time
 
