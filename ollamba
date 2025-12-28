@@ -1,0 +1,35 @@
+---
+- name: Install and configure Ollama
+  hosts: ollama
+  become: yes
+
+  tasks:
+    - name: Update apt packages
+      apt:
+        update_cache: yes
+        upgrade: dist
+
+    - name: Install required packages
+      apt:
+        name:
+          - curl
+          - ca-certificates
+        state: present
+
+    - name: Install Ollama
+      shell: |
+        curl -fsSL https://ollama.com/install.sh | sh
+      args:
+        creates: /usr/bin/ollama
+
+    - name: Enable and start Ollama service
+      systemd:
+        name: ollama
+        enabled: yes
+        state: started
+
+    - name: Pull a default model (llama3)
+      shell: |
+        ollama pull llama3
+      args:
+        creates: /usr/share/ollama/models
