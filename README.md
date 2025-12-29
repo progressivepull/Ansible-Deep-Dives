@@ -166,6 +166,7 @@ ubuntu-node2 : ok=1 changed=0
 ---
 
 # References
+* [Ansible Official Website - RedHat](https://www.redhat.com/en/ansible-collaborative)
 * [diveinto playground](https://diveinto.com/p/playground)
 * [diveintoansible](https://github.com/spurin/diveintoansible)
 * [diveintoansible-lab](https://github.com/spurin/diveintoansible-lab)

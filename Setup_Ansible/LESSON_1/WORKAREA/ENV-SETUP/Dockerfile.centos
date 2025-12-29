@@ -1,3 +1,0 @@
-FROM spurin/diveintoansible:centos_stream
-
-RUN yum install -y sshpass && yum clean all
