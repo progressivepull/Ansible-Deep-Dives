@@ -17,3 +17,4 @@
 
 ## LESSON 3: Playbooks
 * [ 3.1 Introduction ](./LESSON_3/3.1_Introduction.md)
+* [ 3.2 Ansible Templating ](./LESSON_3/3.2_Ansible_Templating.md)
